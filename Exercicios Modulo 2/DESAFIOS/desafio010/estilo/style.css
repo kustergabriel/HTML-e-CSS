@@ -31,6 +31,9 @@ body {
     font-family: var(--fonte-padrao);
     margin: auto;
 }
+a.externo::after {
+    content: '\1F517';
+}
 
 header {
     background-image: linear-gradient(to bottom, var(--cor3),var(--cor4));
@@ -102,8 +105,9 @@ main img.pequena {
     display: block;
     margin: auto;
 }
+
 main span {
-    color: var(--cor1);
+    color: var(--cor2);
     font-weight: bold;
 }
 main a {
@@ -129,7 +133,42 @@ main h2 {
     font-size: 1.3em;
     text-indent: 8px;
 }
-
+div.video {
+    background-color: var(--cor4);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+aside {
+    background-color: var(--cor0);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.103);
+}
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+    padding-left: 20px;
+}
+aside h3{
+    background-color: var(--cor3);
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: white;
+}
+aside p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 footer {
     background-color: var(--cor5);
     color: white;
@@ -137,6 +176,7 @@ footer {
 }
 footer > p {
     text-align: center;
+    padding: 5px;
 }
 footer a {
     text-decoration: none;
