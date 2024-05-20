@@ -31,21 +31,49 @@ body {
     font-family: var(--fonte-padrao);
     margin: auto;
 }
+
 header {
-    background-color: var(--cor4);
+    background-image: linear-gradient(to bottom, var(--cor3),var(--cor4));
+    min-width: 150px;
+    text-align: center;
 }
 
 header > p {
     color: white;
+    padding: 10px;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.185);
 }
 
 header > h1 {
     color: white;
     font-family: var(--fonte-destaque);
+    padding: 20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.185);
 }
 
 nav {
     background-color: var(--cor4);
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.329);
+}
+nav > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition-duration: .3s;
+}
+nav a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
 }
 
 main {
@@ -53,19 +81,73 @@ main {
     min-width: 320px;
     max-width: 800px;
     margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
-
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+}
+main img {
+    width: 100%;
+}
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+main span {
+    color: var(--cor1);
+    font-weight: bold;
+}
+main a {
+    color: var(--cor5);
+    font-weight: bold;
+    text-decoration: none;
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
 main h1 {
     font-family: var(--fonte-android);
-    color: var(--cor4);
+    color: var(--cor5);
 }
 
 main h2 {
     font-family: var(--fonte-android);
     color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor0),white);
+    font-size: 1.3em;
+    text-indent: 8px;
 }
 
 footer {
     background-color: var(--cor5);
     color: white;
+    padding: 8px;
+}
+footer > p {
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    color: var(--cor0);
+    font-weight: bold;
+}
+footer a:hover {
+    background-color: var(--cor1);
+    color: var(--cor4);
+    text-decoration: underline;
+    padding: 2px;
+    border-radius: 5px;
+    transition-duration: .3s;
 }
